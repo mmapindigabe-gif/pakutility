@@ -48,7 +48,10 @@ creator: "PakUtility",
 publisher: "PakUtility",
 
 verification: {
-google: "i-TdKmO9zKFcYNHSvNYucvY7FLTwi9FBCATMKt1r148",
+  google: "i-TdKmO9zKFcYNHSvNYucvY7FLTwi9FBCATMKt1r148",
+  other: {
+    "google-adsense-account": "ca-pub-4800610599034249",
+  },
 },
 
 alternates: {
