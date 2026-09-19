@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import GoogleAnalytics from "./GoogleAnalytics";
 
@@ -93,6 +94,19 @@ return (
 <html
 lang="en"
 className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-> <body className="min-h-full flex flex-col"><GoogleAnalytics />{children}</body> </html>
+> <body className="min-h-full flex flex-col"> <GoogleAnalytics />
+
+```
+    <Script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4800610599034249"
+      crossOrigin="anonymous"
+      strategy="afterInteractive"
+    />
+
+    {children}
+  </body>
+</html>
+
 );
 }
